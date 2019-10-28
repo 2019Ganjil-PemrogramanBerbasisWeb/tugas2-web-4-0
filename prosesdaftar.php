@@ -10,7 +10,7 @@
      if(!$username || !$pass) {
        echo "<div align='center'>Masih ada data yang kosong! <a href='my-accountregis.php'>Back</a>";
      } else {
-       $data = "INSERT INTO user VALUES (NULL, '$username', '$pass')";
+       $data = "INSERT INTO user (id, username, password) VALUES (NULL, '$username', '$pass')";
        $simpan = $db->query($data);
        if($simpan) {
          echo "<div align='center'>Pendaftaran Sukses, Silahkan <a href='index.php'>Login</a></div>";
