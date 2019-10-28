@@ -4,6 +4,7 @@
    $username = $_POST['username'];
    $pass = $_POST['password'];   
    $sql = "SELECT * FROM user WHERE username = '$username' and password = '$pass'";
+   $hass=hash('sha256', $pass);
    $query = $db->query($sql);
    $hasil = $query->fetch_assoc();
    if($query->num_rows == 0) {
