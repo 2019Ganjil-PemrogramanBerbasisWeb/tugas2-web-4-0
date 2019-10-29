@@ -8,7 +8,7 @@
    if($query->num_rows != 0) {
      echo "<div align='center'>Username Sudah Terdaftar! <a href='index.php'>Back</a></div>";
    } else {
-     if(!$username || !$pass) {
+     if(!$username || !$hass) {
        echo "<div align='center'>Masih ada data yang kosong! <a href='my-accountregis.php'>Back</a>";
      } else {
        $data = "INSERT INTO user (id, username, password) VALUES (NULL, '$username', '$hass')";
