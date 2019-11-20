@@ -428,7 +428,7 @@
 	                scrollwheel: false,
 
 	                // The latitude and longitude to center the map (always required)
-	                center: new google.maps.LatLng(-7.258835, 112.751909), // New York
+	                center: new google.maps.LatLng(23.7286, 90.3854), // New York
 
 	                // How you would like to style the map. 
 	                // This is where you would paste any style found on Snazzy Maps.
@@ -534,7 +534,7 @@
 
 	            // Let's also add a marker while we're at it
 	            var marker = new google.maps.Marker({
-	                position: new google.maps.LatLng(-7.258835, 112.751909),
+	                position: new google.maps.LatLng(23.7286, 90.3854),
 	                map: map,
 	                title: 'Dcare!',
 	                icon: 'images/icons/map.png',

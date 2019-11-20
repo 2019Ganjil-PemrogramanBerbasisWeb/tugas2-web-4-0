@@ -2,10 +2,8 @@
    session_start();
    require_once("koneksi.php");
    $username = $_POST['username'];
-   $pass = $_POST['password'];
-   $hass=hash('sha256', $pass);   
-   $sql = "SELECT * FROM user WHERE username = '$username' and password = '$hass'";
-   
+   $pass = $_POST['password'];   
+   $sql = "SELECT * FROM user WHERE username = '$username' and password = '$pass'";
    $query = $db->query($sql);
    $hasil = $query->fetch_assoc();
    if($query->num_rows == 0) {
